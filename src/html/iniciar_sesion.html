@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
-    
+    <title>Legere | Iniciar sesión</title>
+    <meta name="description" content="¡Hola de vuelta! Iniciá sesión para acceder a tu cuenta y poder descubrir tus libros favoritos, continuar con tus elegidos pendientes y mantenerte conectado con una comunidad apasionada por la lectura. ¡Tu próxima aventura literaria te espera al otro lado!">
+    <meta name="keywords" content="acceder, iniciar sesión, ingresar, cuenta">
+
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Pantalla responsive -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <!-- CSS -->   
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -21,18 +22,18 @@
 
         <header class="navbar navbar-expand-lg" style="background-color:#F9FAFA">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/logo.jpg" alt="logo_web"></a>
+                <a class="navbar-brand" href="#logo"><img src="../img/logo.jpg" alt="logo_web"></a>
            
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="nav-menu" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-menu-item"><a href="../index.html"; class="nav-menu-link nav-link" ; >Home</a></li>
+                        <li class="nav-menu-item"><a href="../index.html"; class="nav-menu-link nav-link">Home</a></li>
                         <li class="nav-menu-item"> <a href="./categorías.html"; class="nav-menu-link nav-link">Categorías</a></li>
-                        <li class="nav-menu-item"> <a href="#"; class="nav-menu-link nav-link" style="color: #9eb33e ">Iniciar sesión</a></li>
+                        <li class="nav-menu-item"> <a href="#iniciar-sesion"; class="nav-menu-link nav-link" style="color: #9eb33e ">Iniciar sesión</a></li>
             
-                        <button class="btn"> <a href="./crear_cuenta.html";>Crear cuenta</a></button>
+                        <button class="btn"> <a href="./crear_cuenta.html">Crear cuenta</a></button>
                     </ul>
                 </nav>
             </div>
@@ -41,51 +42,46 @@
     <!-- FIN NavBar Bootstrap -->
 
 
-    <main id="main-inicio-sesion">
-            
+    <main id="main-inicio-sesion">  
         <div class="hero-inicio-sesion">
-            <div class="hero"></div>
-        </div>
-            
-        <div id="main-container">
-            <div id="form-container">
-                <h1 class="title-inicio-sesion">Iniciar sesión</h1>
-                <form id="iniciar_sesion.php" method="post" enctype="text/plain">
-                    <p>
-                        <input id="username" type="text" placeholder="Usuario" required>
-                    </p>
-                    <p>
-                        <input id="user-password" type="password" placeholder="Contraseña" required>
-                    </p>
-                    <p class="olvidaste-la-contraseña">
-                        <a href="#" style="color: black;" ; >¿Olvidaste la contraseña?</a>
-                    </p>
-                    <p>
-                        <input class="form-confirm" type="submit" value="Iniciar sesión" style="color: white;">
-                    </p>
-                    <p class="link-crear-cuenta">
-                        <a href="./crear_cuenta.html" style="color: black;">Crear cuenta</a>
-                    </p>
-                        
-                </form>
+            <div id="main-container">
+                <div id="form-container">
+                    <h1 class="title-inicio-sesion">Iniciar sesión</h1>
+                    <form id="iniciar_sesion.php" method="post" enctype="text/plain">
+                        <p>
+                            <input id="username" type="text" placeholder=" Usuario" required>
+                        </p>
+                        <p>
+                            <input id="user-password" type="password" placeholder=" Contraseña" required>
+                        </p>
+                        <p class="olvidaste-la-contraseña">
+                            <a href="#recupero-de-contraseña" style="color: black;">¿Olvidaste la contraseña?</a>
+                        </p>
+                    
+                        <button class="boton-confirm"> <a href="#inicio-sesion">Iniciar sesión</a></button>
+                    
+                        <p class="link-crear-cuenta">
+                            <a href="./crear_cuenta.html" style="color: black;">Crear cuenta</a>
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
-        
     </main>
     
     <footer class="footer">
         <div class="footer-container">
             <div class="social-icons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-google-play"></i></a>
-                <a href=""><i class="fa-brands fa-app-store"></i></a>
+                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#google-play"><i class="fa-brands fa-google-play"></i></a>
+                <a href="#app-store"><i class="fa-brands fa-app-store"></i></a>
             </div>
             <div class="footer-nav">
                 <ul>
-                   <li><a href="#">Acerca de Legere</a></li> 
-                   <li><a href="#">Ayuda / FAQs</a></li> 
-                   <li><a href="#">Contacto</a></li> 
+                   <li><a href="#acerca-de-legere">Acerca de Legere</a></li> 
+                   <li><a href="#ayuda-faqs">Ayuda / FAQs</a></li> 
+                   <li><a href="#contacto">Contacto</a></li> 
                 </ul>
             </div>
         </div>

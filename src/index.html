@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    
+    <title>Legere | Home</title>
+    <meta name="description" content="Bienvenidos a Legere, un mundo de conocimiento en la palma de la mano. Encontrarás uno de los catálogos de libros más grandes de Latinoamérica, con más de
+    400.000 títulos atrapantes. Descubrí el sinfín de beneficios disponibles en un sólo lugar.">
+    <meta name="keywords" content="libros, autor, leer, género, categorías, literatura, descargar libros">
+
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+    <!-- CSS -->   
     <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
@@ -20,7 +23,7 @@
 
     <header class="navbar navbar-expand-lg" style="background-color:#F9FAFA">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../src/img/logo.jpg" alt="logo_web"></a>
+            <a class="navbar-brand" href="#logo"><img src="../src/img/logo.jpg" alt="logo_web"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,11 +31,11 @@
             </button>
             <nav class="nav-menu" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-menu-item"><a href="#" ; class="nav-menu-link nav-link" style="color: #9eb33e;">Home</a></li>
+                    <li class="nav-menu-item"><a href="#home" ; class="nav-menu-link nav-link" style="color: #9eb33e;">Home</a></li>
                     <li class="nav-menu-item"> <a href="./html/categorías.html" ; class="nav-menu-link nav-link">Categorías</a><li>
                     <li class="nav-menu-item"> <a href="./html/iniciar_sesion.html" ; class="nav-menu-link nav-link">Iniciar sesión</a></li>
 
-                    <button class="btn"> <a href="./html/crear_cuenta.html" ;>Crear cuenta</a></button>
+                    <button class="btn"> <a href="./html/crear_cuenta.html">Crear cuenta</a></button>
                 </ul>
             </nav>
         </div>
@@ -41,272 +44,262 @@
     <!-- FIN NavBar Bootstrap -->
 
     <main>
+
+       <!-- Comienzo Banner -->
         <div class="container">
-            <div class="centered">
-                <div class="banner">
-                    <h1 class="título-principal">¡Descubrí Legere y aprovecha nuestro plan Premium!</h1>
-                    <p class="resumen">Podrás acceder a más de 200.000 títulos a precios económicos, obsequios de giftcards con la compra de libros en promoción, también disfrutarás de un servicio de traducción a tres idiomas diferentes y mucho más.</p>
-                    <div class="boton">
-                        <a href="#">Ver promociones</a>
-                    </div>
-                </div>
+            <div class="banner-box">
+                <h1>¡Descubrí Legere y aprovecha nuestro plan Premium!</h1> 
+                <p>Podrás acceder a más de 200.000 títulos a precios económicos, obsequios de giftcards con la compra de libros en promoción, también disfrutarás de un servicio de traducción a tres idiomas diferentes y mucho más.</p>
+                
+                <button class="boton"> <a href="#promociones">Ver promociones</a></button>
             </div>
         </div>
+        <!-- FIN Banner -->
 
         <div id="subtitle">
             ¡Cada página es una aventura, descargá tu próximo viaje literario!
         </div>
-        
+
+        <!-- INICIO carousel -->
         <div class="carousel">
             <div class="carousel-lista">
                 <div class="card-categoria">
-                    <img src="./img/pagina_home/carousel-categorias/cocina.jpg" alt="cocina">
+                    <img src="./img/pagina_home/carousel-categorias/cocina.jpg" alt="Categoria Cocina">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Cocina</a>
+                        <p class="parraf-carousel"><a href="#libros-cocina">Cocina</a>
                     </div>
                 </div>    
 
                 <div class="card-categoria">
-                    <img src="./img/pagina_home/carousel-categorias/general.jpg" alt="general">
+                    <img src="./img/pagina_home/carousel-categorias/general.jpg" alt="Categoria General">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">General</a>
+                        <p class="parraf-carousel"><a href="#libros-general">General</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">
-                    <img src="./img/pagina_home/carousel-categorias/historia.jpg" alt="historia">
+                    <img src="./img/pagina_home/carousel-categorias/historia.jpg" alt="Categoria Historia">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Historia</a>
+                        <p class="parraf-carousel"><a href="./html/historia.html">Historia</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">  
-                    <img src="./img/pagina_home/carousel-categorias/drama.jpg" alt="drama">
+                    <img src="./img/pagina_home/carousel-categorias/drama.jpg" alt="Categoria Drama">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Drama</a>
+                        <p class="parraf-carousel"><a href="#libros-drama">Drama</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">  
-                    <img src="./img/pagina_home/carousel-categorias/geografia.jpg" alt="geografía">
+                    <img src="./img/pagina_home/carousel-categorias/geografia.jpg" alt="Categoria Geografía">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Geografía</a>
+                        <p class="parraf-carousel"><a href="#libros-geografia">Geografía</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/ficcion.jpg" alt="ficción">
+                    <img src="./img/pagina_home/carousel-categorias/ficcion.jpg" alt="Categoria Ficción">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Ficción</a>
+                        <p class="parraf-carousel"><a href="#libros-ficcion">Ficción</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/turismo.jpg" alt="turismo">
+                    <img src="./img/pagina_home/carousel-categorias/turismo.jpg" alt="Categoria Turismo">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Turismo</a>
+                        <p class="parraf-carousel"><a href="#libros-turismo">Turismo</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/animales.jpg" alt="animales">
+                    <img src="./img/pagina_home/carousel-categorias/animales.jpg" alt="Categoria Animales">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Animales</a>
+                        <p class="parraf-carousel"><a href="#libros-animales">Animales</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/comics.jpg" alt="comics">
+                    <img src="./img/pagina_home/carousel-categorias/comics.jpg" alt="Categoria Comics">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Comics</a>
+                        <p class="parraf-carousel"><a href="#libros-comics">Comics</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/plantas.jpg" alt="plantas">
+                    <img src="./img/pagina_home/carousel-categorias/plantas.jpg" alt="Categoria Plantas">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Plantas</a>
+                        <p class="parraf-carousel"><a href="#libros-plantas">Plantas</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/idiomas.jpg" alt="idiomas">
+                    <img src="./img/pagina_home/carousel-categorias/idiomas.jpg" alt="Categoria Idiomas">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Idiomas</a>
+                        <p class="parraf-carousel"><a href="#libros-idiomas">Idiomas</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/meditacion.jpg" alt="meditación">
+                    <img src="./img/pagina_home/carousel-categorias/meditacion.jpg" alt="Categoria Meditación">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Meditación</a>
+                        <p class="parraf-carousel"><a href="#libros-meditacion">Meditación</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/poesia.jpg" alt="poesía">
+                    <img src="./img/pagina_home/carousel-categorias/poesia.jpg" alt="Categoria Poesía">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Poesía</a>
+                        <p class="parraf-carousel"><a href="#libros-poesia">Poesía</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">   
-                    <img src="./img/pagina_home/carousel-categorias/terror.jpg" alt="terror">
+                    <img src="./img/pagina_home/carousel-categorias/terror.jpg" alt="Categoria Terror">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Terror</a>
+                        <p class="parraf-carousel"><a href="#libros-terror">Terror</a>
                     </div>
                 </div> 
 
                 <div class="card-categoria">  
-                    <img src="./img/pagina_home/carousel-categorias/misterio.jpg" alt="misterio">
+                    <img src="./img/pagina_home/carousel-categorias/misterio.jpg" alt="Categoria Misterio">
                     <div class="cuerpo-card-categoria">
-                        <p class="parraf-carousel"><a href="#">Misterio</a></p>
+                        <p class="parraf-carousel"><a href="#libros-misterio">Misterio</a></p>
                     </div>
                 </div> 
             </div>
         </div>
-        
+        <!-- FIN carousel -->
+
         <div class="mas-descargados">
         
-            <h2 class="secciones">Los títulos más descargados</h2>
+            <h2 class="secciones">- Los títulos más descargados -</h2>
 
             <div class="linea1">
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/moby-dick.jpg" height="150px" width="144px" alt="Moby Dick">
+                        <img src="./img/pagina_home/libros/moby-dick.jpg" height="165px" width="160px" alt="Portada libro Moby Dick">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Moby Dick</a></h3>
-                        <p class="card-autor"><a href="#">Herman Melville</a></p>
+                        <h3 class="card-title"><a href="#libro-moby-dick">Moby Dick</a></h3>
+                        <p class="card-autor"><a href="#libro-moby-dick">Herman Melville</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/el-jilguero.jpg" height="150px" width="144px" alt="El jilguero">
+                        <img src="./img/pagina_home/libros/el-jilguero.jpg" height="165px" width="160px" alt="Portada libro El jilguero">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">El jilguero</a></h3>
-                        <p class="card-autor"><a href="#">Donna Tartt</a></p>
+                        <h3 class="card-title"><a href="#libro-el-jilguero">El jilguero</a></h3>
+                        <p class="card-autor"><a href="#libro-el-jilguero">Donna Tartt</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/exrtañas.jpg" height="150px" width="144px" alt="Extrañas">
+                        <img src="./img/pagina_home/libros/extrañas.jpg" height="165px" width="160px" alt="Portada libro Extrañas">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Extrañas</a></h3>
-                        <p class="card-autor"><a href="#">Guillermo Arriaga</a></p>
+                        <h3 class="card-title"><a href="#libro-extrañas">Extrañas</a></h3>
+                        <p class="card-autor"><a href="#libro-extrañas">Guillermo Arriaga</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/extasis.jpg" height="150px" width="144px" alt="Éxtasis">
+                        <img src="./img/pagina_home/libros/éxtasis.jpg" height="165px" width="160px" alt="Portada libro Éxtasis">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Éxtasis</a></h3>
-                        <p class="card-autor"><a href="#">Gabriela Mistral</a></p>
+                        <h3 class="card-title"><a href="#libro-éxtasis">Éxtasis</a></h3>
+                        <p class="card-autor"><a href="#libro-éxtasis">Gabriela Mistral</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/iliada.jpg" height="150px" width="144px" alt="Ilíada">
+                        <img src="./img/pagina_home/libros/blonde.jpg" height="165px" width="160px" alt="Portada libro Blonde">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Ilíada</a></h3>
-                    <p class="card-autor"><a href="#">Homero</a></p>
+                        <h3 class="card-title"><a href="#libro-blonde">Blonde</a></h3>
+                        <p class="card-autor"><a href="#libro-blonde">Joyce Carol Oates</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/blonde.jpg" height="150px" width="144px" alt="Blonde">
+                        <img src="./img/pagina_home/libros/sherlock-holmes.jpg" height="165px" width="160px" alt="Portada libro Sherlock Holmes">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Blonde</a></h3>
-                        <p class="card-autor"><a href="#">Joyce Carol Oates</a></p>
+                        <h3 class="card-title"><a href="#libro-sherlock-holmes">Sherlock Holmes</a></h3>
+                        <p class="card-autor"><a href="#libro-sherlock-holmes">Arthur Conan D.</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/sherlock-holmes.jpg" height="150px" width="144px" alt="Sherlock Holmes">
+                        <img src="./img/pagina_home/libros/contradicciones.jpg" height="165px" width="160px" alt="Portada libro Contradicciones">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Sherlock Holmes</a></h3>
-                        <p class="card-autor"><a href="#">Arthur Conan D.</a></p>
+                        <h3 class="card-title"><a href="#libro-contradicciones">Contradicciones</a></h3>
+                        <p class="card-autor"><a href="#libro-contradicciones">Darlis Stefany</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/bestuario.jpg" height="150px" width="144px" alt="Bestuario">
+                        <img src="./img/pagina_home/libros/edipo-rey.jpg" height="165px" width="160px" alt="Portada libro Edipo Rey">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Bestuario</a></h3>
-                        <p class="card-autor"><a href="#">Ignacio Alcuri</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="linea2">
-                <div class="card-libro">
-                    <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/edipo-rey.jpg" height="150px" width="144px" alt="Edipo Rey">
-                    </div> 
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#">Edipo Rey</a></h3>
-                        <p class="card-autor"><a href="#">Sófocles</a></p>
+                        <h3 class="card-title"><a href="#libro-edipo-rey">Edipo Rey</a></h3>
+                        <p class="card-autor"><a href="#libro-edipo-rey">Sófocles</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/guerra-y-paz.jpg" height="150px" width="144px" alt="Guerra y paz">
+                        <img src="./img/pagina_home/libros/guerra-y-paz.jpg" height="165px" width="160px" alt="Portada libro Guerra y paz">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Guerra y paz</a></h3>
-                        <p class="card-autor"><a href="#">Lev Tolstói</a></p>
+                        <h3 class="card-title"><a href="#libro-guerra-y-paz">Guerra y paz</a></h3>
+                        <p class="card-autor"><a href="#libro-guerra-y-paz">Lev Tolstói</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/casa-de-muñecas.jpg" height="150px" width="144px" alt="Casa de muñecas">
+                        <img src="./img/pagina_home/libros/casa-de-muñecas.jpg" height="165px" width="160px" alt="Portada libro Casa de muñecas">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Casa de muñecas</a></h3>
-                        <p class="card-autor"><a href="#">Henrik Ibsen</a></p>
+                        <h3 class="card-title"><a href="#libro-casa-de-muñecas">Casa de muñecas</a></h3>
+                        <p class="card-autor"><a href="#libro-casa-de-muñecas">Henrik Ibsen</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/la-tia-mame.jpg" height="150px" width="144px" alt="La tía Mame">
+                        <img src="./img/pagina_home/libros/tia-mame.jpg" height="165px" width="160px"  alt="Portada libro La tía Mame">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="./html/libro_la_tia_mame.html">La tía Mame</a></h3>
-                        <p class="card-autor"><a href="./html/libro_la_tia_mame.html">Patrick Dennis</a></p>
+                        <h3 class="card-title"><a href="#libro-la-tia-mame">La tía Mame</a></h3>
+                        <p class="card-autor"><a href="#libro-la-tia-mame">Patrick Dennis</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/anna-karenina.jpg" height="150px" width="144px" alt="Anna Karenina">
+                        <img src="./img/pagina_home/libros/anna-karenina.jpg" height="165px" width="160px"  alt="Portada libro Anna Karenina">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Anna Karenina</a></h3>
-                        <p class="card-autor"><a href="#">Lev Tolstói</a></p>
+                        <h3 class="card-title"><a href="#libro-anna-karenina">Anna Karenina</a></h3>
+                        <p class="card-autor"><a href="#libro-anna-karenina">Lev Tolstói</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/hemisferios.jpg" height="150px" width="144px" alt="Hemisferios">
+                        <img src="./img/pagina_home/libros/hemisferios.jpg" height="165px" width="160px"  alt="Portada libro Hemisferios">
                     </div> 
-                <div class="card-body">
-                        <h3 class="card-title"><a href="#">Hemisferios</a></h3>
-                        <p class="card-autor"><a href="#">Pablo Pérez R.</a></p>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#libro-hemisferios">Hemisferios</a></h3>
+                        <p class="card-autor"><a href="#libro-hemisferios">Pablo Pérez R.</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_mas_descargados/contradicciones.jpg" height="150px" width="144px" alt="Contradicciones">
+                        <img src="./img/pagina_home/libros/holly.jpg" height="165px" width="160px"  alt="Portada libro Stephen King">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Contradicciones</a></h3>
-                        <p class="card-autor"><a href="#">Darlis Stefany</a></p>
+                        <h3 class="card-title"><a href="#libro-holly">Holly</a></h3>
+                        <p class="card-autor"><a href="#libro-holly">Stephen King</a></p>
                     </div>
                 </div>
             </div>
@@ -314,145 +307,133 @@
 
         <div class="en-promocion">
         
-            <h2 class="secciones">Libros en promoción</h2>
+            <h2 class="secciones">- Libros en promoción -</h2>
 
             <div class="linea1">
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/vive-mas.jpg" height="150px" width="144px" alt="Vive más">
+                        <img src="./img/pagina_home/libros/vive-mas.jpg" height="165px" width="160px"  alt="Portada libro Vive más">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Vive más</a></h3>
-                        <p class="card-autor"><a href="#">Marcos Vazquez</a></p>
+                        <h3 class="card-title"><a href="#libro-vive-mas">Vive más</a></h3>
+                        <p class="card-autor"><a href="#libro-vive-mas">Marcos Vazquez</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/extasis.jpg" height="150px" width="144px" alt="Extasis">
+                        <img src="./img/pagina_home//libros/extasis.jpg" height="165px" width="160px"  alt="Portada libro Extasis">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Éxtasis</a></h3>
-                        <p class="card-autor"><a href="#">Tracy Wolff</a></p>
+                        <h3 class="card-title"><a href="#libro-extasis">Éxtasis</a></h3>
+                        <p class="card-autor"><a href="#libro-extasis">Tracy Wolff</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/holly.jpg" height="150px" width="144px" alt="Stephen King">
+                        <img src="./img/pagina_home/libros/bocabesada.jpg" height="165px" width="160px"  alt="Portada libro Bocabesada">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Holly</a></h3>
-                        <p class="card-autor"><a href="#">Stephen King</a></p>
+                        <h3 class="card-title"><a href="#libro-bocabesada">Bocabesada</a></h3>
+                        <p class="card-autor"><a href="#libro-bocabesada">Juan del Val</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/bocabesada.jpg" height="150px" width="144px" alt="Bocabesada">
+                        <img src="./img/pagina_home/libros/habitos-atomicos.jpg" height="165px" width="160px"  alt="Portada libro Hábitos atómicos">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Bocabesada</a></h3>
-                        <p class="card-autor"><a href="#">Juan del Val</a></p>
+                        <h3 class="card-title"><a href="#libro-habitos-atomicos">Hábitos atómicos</a></h3>
+                    <p class="card-autor"><a href="#libro-habitos-atomicos">James Clear</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/habitos-atomicos.jpg" height="150px" width="144px" alt="Hábitos atómicos">
+                        <img src="./img/pagina_home/libros/maldito-hamor.jpg" height="165px" width="160px"  alt="Portada libro Maldito hamor">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Hábitos atómicos</a></h3>
-                    <p class="card-autor"><a href="#">James Clear</a></p>
+                        <h3 class="card-title"><a href="#libro-maldito-hamor">Maldito hamor</a></h3>
+                        <p class="card-autor"><a href="#libro-maldito-hamor">Cruz Sánchez de L.</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/maldito-hamor.jpg" height="150px" width="144px" alt="Maldito hamor">
+                        <img src="./img/pagina_home/libros/la-arquitectriz.jpg" height="165px" width="160px"  alt="Portada libro La arquitectriz">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Maldito hamor</a></h3>
-                        <p class="card-autor"><a href="#">Cruz Sánchez de L.</a></p>
+                        <h3 class="card-title"><a href="#libro-la-arquitectriz">La arquitectriz</a></h3>
+                        <p class="card-autor"><a href="#libro-la-arquitectriz">Melania Mazzucco</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/la-arquitectriz.jpg" height="150px" width="144px" alt="La arquitectriz">
+                        <img src="./img/pagina_home/libros/sira.jpg" height="165px" width="160px"  alt="Portada libro Sira">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">La arquitectriz</a></h3>
-                        <p class="card-autor"><a href="#">Melania Mazzucco</a></p>
+                        <h3 class="card-title"><a href="#libro-sira">Sira</a></h3>
+                        <p class="card-autor"><a href="#libro-sira">María Dueñas</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/sira.jpg" height="150px" width="144px" alt="Sira">
+                        <img src="./img/pagina_home/libros/maldita-roma.jpg" height="165px" width="160px"  alt="Portada libro Maldita Roma">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Sira</a></h3>
-                        <p class="card-autor"><a href="#">María Dueñas</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="linea2">
-                <div class="card-libro">
-                    <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/maldita-roma.jpg" height="150px" width="144px" alt="Maldita Roma">
-                    </div> 
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#">Maldira Roma</a></h3>
-                        <p class="card-autor"><a href="#">S. Posteguillo</a></p>
+                        <h3 class="card-title"><a href="#libro-maldita-roma">Maldita Roma</a></h3>
+                        <p class="card-autor"><a href="#libro-maldita-roma">S. Posteguillo</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/alas-de-sangre.jpg" height="150px" width="144px" alt="Alas de sangre">
+                        <img src="./img/pagina_home/libros/alas-de-sangre.jpg" height="165px" width="160px"  alt="Portada libro Alas de sangre">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Alas de sangre</a></h3>
-                        <p class="card-autor"><a href="#">Rebecca Yarros</a></p>
+                        <h3 class="card-title"><a href="#libro-alas-de-sangre">Alas de sangre</a></h3>
+                        <p class="card-autor"><a href="#libro-alas-de-sangre">Rebecca Yarros</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/tan-poca-vida.jpg" height="150px" width="144px" alt="Tan poca vida">
+                        <img src="./img/pagina_home/libros/tan-poca-vida.jpg" height="165px" width="160px"  alt="Portada libro Tan poca vida">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Tan poca vida</a></h3>
-                        <p class="card-autor"><a href="#">Hanya Yanagihara</a></p>
+                        <h3 class="card-title"><a href="#libro-tan-poca-vida">Tan poca vida</a></h3>
+                        <p class="card-autor"><a href="#libro-tan-poca-vida">Hanya Yanagihara</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/francia.jpg" height="150px" width="144px" alt="Francia">
+                        <img src="./img/pagina_home/libros/francia.jpg" height="165px" width="160px"  alt="Portada libro Francia">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Francia</a></h3>
-                        <p class="card-autor"><a href="#">Guías del mundo</a></p>
+                        <h3 class="card-title"><a href="#libro-francia">Francia</a></h3>
+                        <p class="card-autor"><a href="#libro-francia">Guías del mundo</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/harry-potter.jpg" height="150px" width="144px" alt="Harry Potter">
+                        <img src="./img/pagina_home/libros/harry-potter.jpg" height="165px" width="160px"  alt="Portada libro Harry Potter">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Harry Potter</a></h3>
-                        <p class="card-autor"><a href="#">J. K. Rowling</a></p>
+                        <h3 class="card-title"><a href="#libro-harry-potter">Harry Potter</a></h3>
+                        <p class="card-autor"><a href="#libro-harry-potter">J. K. Rowling</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/atlas.jpg" height="150px" width="144px" alt="Atlas">
+                        <img src="./img/pagina_home/libros/atlas.jpg" height="165px" width="160px"  alt="Portada libro Atlas">
                     </div> 
                 <div class="card-body">
-                        <h3 class="card-title"><a href="#">Atlas de las islas</a></h3>
-                        <p class="card-autor"><a href="#">Imaginarias</a></p>
+                        <h3 class="card-title"><a href="#libro-atlas-de-las-islas">Atlas de las islas</a></h3>
+                        <p class="card-autor"><a href="#libro-atlas-de-las-islas">Imaginarias</a></p>
                     </div>
                 </div>
                 <div class="card-libro">
                     <div class="card-header">
-                        <img src="./img/pagina_home/libros_en_promocion/hawaii.jpg" height="150px" width="144px" alt="Hawaii">
+                        <img src="./img/pagina_home/libros/hawai.jpg" height="165px" width="160px"  alt="Portada libro Hawaii">
                     </div> 
                     <div class="card-body">
-                        <h3 class="card-title"><a href="#">Hawaii</a></h3>
-                        <p class="card-autor"><a href="#">Lonely Planet</a></p>
+                        <h3 class="card-title"><a href="#libro-hawaii">Hawaii</a></h3>
+                        <p class="card-autor"><a href="#libro-hawaii">Lonely Planet</a></p>
                     </div>
                 </div>
             </div>
@@ -462,16 +443,16 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="social-icons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-google-play"></i></a>
-                <a href=""><i class="fa-brands fa-app-store"></i></a>
+                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#google-play"><i class="fa-brands fa-google-play"></i></a>
+                <a href="#app-store"><i class="fa-brands fa-app-store"></i></a>
             </div>
             <div class="footer-nav">
                 <ul>
-                   <li><a href="#">Acerca de Legere</a></li> 
-                   <li><a href="#">Ayuda / FAQs</a></li> 
-                   <li><a href="#">Contacto</a></li> 
+                   <li><a href="#acerca-de-legere">Acerca de Legere</a></li> 
+                   <li><a href="#ayuda-faqs">Ayuda / FAQs</a></li> 
+                   <li><a href="#contacto">Contacto</a></li> 
                 </ul>
             </div>
         </div>

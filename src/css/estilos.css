@@ -20,8 +20,7 @@ ul{
     list-style:none;
 }
 
-/* PANTALLA INDEX */
-/* Inicio: Estilos del header */
+/* INICIO ESTILOS DEL HEADER */
 
 .header{
     background-color: #F9FAFA;
@@ -32,6 +31,10 @@ ul{
     left: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.navbar-toggler {
+    border: var(--bs-border-width) solid #9eb33e;
 }
 
 .nav{
@@ -48,7 +51,7 @@ ul{
 
 .nav-menu{
     display: flex;
-    margin-right: 57px;
+    margin-right: 15px;
     list-style: none;
 }
 
@@ -73,7 +76,7 @@ ul{
 }
 
 .btn a{
-    border: 2px solid #49604d;
+    border: 2px solid #1B5016;
     border-radius: 10px;
     padding: 10px 15px;
     text-decoration: none;
@@ -106,109 +109,120 @@ ul{
     border: 2.5px solid #9eb33e;
 }
 
-/* Fin: Estilos del header */
+/* FIN ESTILOS DEL HEADER */
 
-/* Inicio: Estilos del main */
+/* INICIO PAGINA INDEX */
 
-.container {
+.container{
     position: relative;
-    text-align: center;
     display: flex;
     max-width: 100%;
-    height: 443px;
-    background-image:url(../img/pagina_home/banner.jpg);
+    height: 550px;
+    background-image:url(../img/banner.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 73px;
-}
-
-.centered {
-    position: absolute;
     margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    height: 75%;
-    transform: translate(-50%, -50%);
-    width: 780px;
-    
+    margin-bottom: 60px;
+    flex-direction: row-reverse;
+    justify-content:left;
+    align-items: center;
 }
 
-.título-principal{
-    font-weight: 700;
-    font-size: 40px;
-    color: black;
-    margin-bottom: 40px;
+.container img{
+    max-width: 100%;
+    height: 560px;
+}
+
+.banner-box{
+    width: 49%;
+    padding-left: 70px;
+}
+
+.banner-box h1{
     text-align: left;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 45px;
+    backdrop-filter: blur(2px);
+    padding-top: 20px;
 }
 
-.resumen{
-    font-weight: 500;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 38px;
-    text-align: justify;
-    display: flex;
+.banner-box p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    color: #F8F1D5;
+    margin-bottom: 25px;
+    backdrop-filter: blur(2px);
 }
 
 .boton {
-    text-align: center;
     font-weight: bold;
-    width: 228px;
-    height: 40px;
-    border-radius: 20px;
-    background-color:#9eb33e;
     font-size: 20px;
-    padding: 5px;
-    margin-right: 20px;
-    margin-left: 275px;
+    margin: 30px 0 30px 130px;
+    background: none;
+    border: none;
 }
 
 .boton a{
     text-decoration: none;
-    color: white;
+    border-radius: 10px;
+    border: 2px solid #9eb33e;
+    background: rgba(255, 255, 255, 0.80);
+    color: black;
+    padding: 10px 20px 10px 20px;
 }
+
+.boton a:hover{
+    color:white;
+    background-color: #1B5016;
+    transition: 0.5s;
+    border: 2px solid #1B5016;
+}    
 
 #subtitle {
     position: relative;
     text-align: center;
     font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 70px;
+    font-size: 27px;
+    margin-top: 90px;
+    margin-bottom: 80px;
 }
 
 .carousel{
-    padding: top 67px;;
-    padding-bottom: 100px;
+    justify-content: center;
+    margin: 90px;
 }
 
 .carousel-lista img{
     width: 100%;
     object-fit: cover;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .carousel-lista{
     display: flex;
     overflow-y:auto;
-    margin-right: 99px;
-    margin-left: 99px;
 }
 
 .card-categoria img{
-    height: 420px;
-    width: 400px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    height: 330px;
+    width: 370px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-color: 1px #536A73;
 }
 
 .parraf-carousel {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    background-color: #49604d;
-    width: 400px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    background-color: #536A73;
+    width: 370px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     padding: 5px;
 }
 
@@ -217,62 +231,54 @@ ul{
 }
 
 .mas-descargados{
-    background: rgba(255, 231, 205, 0.30);
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 60px;
     margin-bottom: 70px;
+    background-image: url(../img/pagina_home/fondo.jpg);
 }
 
 .secciones{
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 600;
-    margin-left: 99px;
+    width: 100%;
     margin-bottom:59px ;
+    justify-content:center;
+    text-align: center;
 }
 
 .linea1{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 99px;
-    margin-right: 99px;
+    align-items: center;
     margin-bottom: 33px;
-}
-
-.linea2{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 165px;
-    margin-left: 165px;
+    justify-content: center;
 }
 
 .card-libro{
-    width: 144px;
-    height: 208px;
-    margin-right: 11px;
+    width: 160px;
+    height: 230px;
+    margin: 12px;
     background-color: white;
-    border: 0.5px solid #d1d3d9;
-    border-radius: 12px;
-    border-radius: 12px;
+    border-bottom: 0.5px solid #d1d3d9;
+    border-left: 0.5px solid #d1d3d9;
+    border-bottom: 0.5px solid #d1d3d9;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .card-header img{
     border-radius: 11px 11px 0px 0px;
-    border-top: 0.5px solid #D1D3D9;
-    border-right: 0.5px solid #D1D3D9;
-    border-left: 0.5px solid #D1D3D9;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: url(<path-to-image>), cover no-repeat;
 }
 
 .card-body{
-    margin-left: 10px;
+    margin-left: 6px;
     margin-top: 10px;
-    margin-right: 10px;
 }
 
 .card-title{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -280,11 +286,8 @@ ul{
     color: black;
 } 
 
-.card-autor{
-    font-size: 13px;
-}
-
 .card-autor a{
+    font-size: 14px;
     color: black;
 }
 
@@ -292,12 +295,12 @@ ul{
     margin-bottom: 80px;
 }
 
-/* Fin: Estilos del main */
+/* FIN PAGINA INDEX */
 
-/* Inicio: Estilos del footer */
+/* INICIO ESTILOS DEL FOOTER */
 
 .footer{
-    background-color: #F6EEDB;
+    background-color: #F6E8D3;
     margin-top: 25px;
 }
 
@@ -326,18 +329,17 @@ ul{
 }
 
 .social-icons a:hover{
-    background-color:#F6EEDB ;
+    background-color:none ;
     transition: 0.5s;
 }
 
 .social-icons a:hover i{
-    color:gray;
+    color:white;
     transition: 0.5s;
 }
 
 .footer-nav{
     margin: 30px 0;
-
     text-align: center;
 }
 
@@ -358,33 +360,26 @@ ul{
 }
 
 .footer-nav ul li a:hover{
-    color: gray;
+    color: white;
 }
 
-/* Fin: Estilos del footer */
+/* FIN ESTILOS DEL FOOTER */
 
-
-/* PANTALLA INICIAR SESIÓN */
-/* Inicio: Estilos del main */
+/* INICIO PAGINA INICIAR SESIÓN */
 
 #main-inicio-sesion {
     text-align: -webkit-center;
 }
 
-#main-container {
-    background-color: #F9FAFA;
-    width: 100%;
-}
-
 .title-inicio-sesion{
     font-size: 25px;
     font-weight:bold;
-    padding: 30px 0 30px 0;
+    padding: 60px 0 30px 0;
 }
 
 #username{
     text-align: left;
-    color: #9999;
+    color: #817B77;
     font-size: 17px;
     font-weight: medium;
     width: 277px;
@@ -397,7 +392,7 @@ ul{
 
 #user-password{
     text-align: left;
-    color: #9999;
+    color: #817B77;
     font-size: 17px;
     font-weight: medium;
     width: 277px;
@@ -415,58 +410,54 @@ ul{
 .link-crear-cuenta {
     text-align: right;
     padding-top: 20px;
-    padding-bottom: 87px;
-    font-weight: medium;
+    padding-bottom: 75px;
+    font-weight: 600;
     font-size: 17px;
 }
 
 .olvidaste-la-contraseña {
     text-align: left;
-    padding: 10px 0 20px 0;
-    font-weight: medium;
+    padding: 8px 0 25px 0;
+    font-weight: 600;
     font-size: 17px;
 }
 
 .hero-inicio-sesion {
-    position: relative;
-    text-align: center;
-    display: flex;
-    max-width: 100%;
-    height: 460px;
     background-image:url(../img/hero.jpg);
+    padding-top: 10%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 5%;
 }
 
-/* PANTALLA CREAR CUENTA */
-/* Inicio: Estilos del main */
+/* FIN PAGINA INICIAR SESIÓN */
+
+/* INICIO PAGINA CREAR CUENTA */
 
 #main-crear-cuenta {
     text-align: -webkit-center;
 }
 
 .hero-crear-cuenta {
-    position: relative;
-    text-align: center;
-    display: flex;
-    max-width: 100%;
-    height: 460px;
-    background-image:url(../img/hero.jpg);
+    background-image:url(../img/hero2.jpg);
+    padding-top: 10%;
+    background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 5%;
 }
 
 #main-container {
     background-color: #F9FAFA;
-    width: 100%;
-    border-top-right-radius: 80px;
-    border-top-left-radius: 80px;
+    width: 30%;
+    border-radius: 20px;
 }
 
 .title-crear-cuenta{
     font-size: 25px;
     font-weight:bold;
-    padding: 30px 0 30px 0;
+    padding: 60px 0 20px 0;
 }
 
 .texto{
@@ -487,67 +478,75 @@ ul{
     width: 277px;
     text-align: left;
     margin-top: 10px; 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .form-input{
     width: 277px;
     height: 46px;
     border-radius: 10px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     background-color:white;
     border-color: #9eb33e;
 }
 
-.form-confirm{
+.boton-confirm{
     width: 277px;
     height: 46px;
     border-radius: 10px;
     border: 2px;
-    background-color: #49604d;
+    background-color: #1B5016;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.form-cancelar{
+.boton-confirm a{
+    color: white;
+}
+
+.boton-cancelar{
     width: 277px;
     height: 46px;
     border-radius: 10px;
-    border: 2px;
-    background-color: #f9f9f9;
+    border: none;
+    background-color: none;
     font-size: 20px;
     margin-bottom: 50px;
     font-weight: medium;
-    padding-bottom: 87px;
+    margin-bottom: 60px;
 }    
 
-/* PANTALLA CATEGORIAS */
-/* Inicio: Estilos del main */
+.boton-cancelar a{
+    color: black;
+    text-align: center;
+}
+
+/* FIN PAGINA CREAR CUENTA */
+
+/* INICIO PAGINA CATEGORIAS */
 
 .índice-categorías{
-    background-color: #f3f3f3;
     width: 100%;
-    height: 62px;
+    height: 60px;
+    margin-bottom: 5px;
+    background-color:#536A73 ;
 }
 
 .índice-categorías .titulo-categorías{
     font-size: 22px;
     font-weight: 500;
     line-height: normal;
-    margin-left: 97px;
-    padding-top: 15px;
-}
-
-.índice-categorías .íconos{
-    float: right;
-    display: flex;
-    flex-wrap: wrap;
+    margin-left: 60px;
+    padding: 15px;
+    color: white;
 }
 
 .contenedor-galería{
-    margin: 42px 0px 122px 97px;
+    margin-left: 100px;
     display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .galería-categorías{
@@ -558,173 +557,175 @@ ul{
 
 .card{
     border-radius: 8px;
-    border: 2px solid #9EB33E;
+    border: none;
     display: flex;
-    width: 250px;
-    height: 170px;
+    width: 285px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin-top: 24px;
-    margin-right: 84px;
+    margin-top: 30px;
+    margin-right: 30px;
 }   
 
-.tipos{
-    border-radius: 16px;
-    border: 1px solid #FFE7CD;
+.tipos h3{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.tipos h3 a{
+    border-radius: 10px;
+    border: 2px solid #1B5016;
     background: rgba(255, 255, 255, 0.80);
-    width: 181px;
-    height: 32px;
-    margin-top: 120px;
-    margin-bottom: 14px;
-}
-
-.tipos-categorías{
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-align: center;
-    padding-top:5px;
-}
-
-.tipos-categorías a{
     color: black;
+    padding: 5px 70px 5px 70px;
 }
 
-.tipos-categorías a:hover {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-}
+.tipos h3 a:hover{
+    color:white;
+    background-color: #1B5016;
+    transition: 0.5s;
+}    
 
-/* PANTALLA LA TÍA MAME */
-/* Inicio: Estilos del main */
+/* FIN PAGINA CATEGORIAS */
 
-.tia-mame{
-    font-weight:500;
-    background-color: #f3f3f3;
-    padding-left: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.portada-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 163px;
-    margin-right: 163px;
-    margin-top: 42px;
-}
-
-.portada img{
-    border-radius: 12px;
-    border: 1px solid #999;
-    background: url(<path-to-image>), lightgray 0px -34.458px / 103.853% 134.677% no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.resumen-portada{
-    margin-left: 55px;
-}
-
-.titulo-portada{
-    font-size: 23px;
-    font-weight: 700;
-    margin-left: 16px;
-}
-
-.autor-portada{
-    font-size: 17px;
-    font-weight:500;
-    margin-left: 16px;
-}
-
-.detalle{
-    list-style:disc;
-    width: 526px;
-    height: 555px;
-}
-
-.intro{
-    font-size: 17px;
-    text-align: justify;
-}
-
-.custom-bold{
-    font-weight: 700;
-}
-
-.montos{
-    width: 294px;
-    height: 62px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom:30px ;
-    margin-left: 16px;
-}
-
-.precio-reg{
-    font-weight: 600;
-    font-size: 15px;
-    width: 119px;
-    margin-right: 40px;
-}
-
-.precio-prem{
-    font-weight: 600;
-    font-size: 15px;
-    width: 131px;
-}
-
-.num-reg{
-    font-weight: 600;
-    font-size: 16px;
-    width: 109px;
-    height: 36px;
-    border-radius: 5px;
-    border: 1.5px solid #49604d;
-    background-color: white;
-    text-align:center;
-    padding-top: 5px;
-    margin-right: 48px;
-}
-
-.num-prem{
-    font-weight: 700;
-    font-size: 16px;
-    width: 125px;
-    height: 35px;
-    background-color: #49604d;
-    border-radius:5px ;
-    text-align: center;
-    color: white;
-    padding-top: 5px;
-}
-
-.boton-añadir {
-    text-align: center;
-    font-weight: bold;
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color:#9eb33e;
-    font-size: 20px;
-    padding: 5px;
-    border: solid #9EB33E;
-    margin-top: 37px;
-    margin-left: 164px;
-}
-
-.boton-añadir a{
-    text-decoration: none;
-    color: white;
-}
+/* INICIO PAGINA HISTORIA */
 
 .linea{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 99px;
-    margin-right: 99px;
-    margin-bottom: 135px;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 80px;
+    justify-content: center;
 }
+
+.card-libro-galeria{
+    width:180px;
+    height: 250px;
+    margin: 15px;
+    background-color: white;
+    border: 0.5px solid #d1d3d9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.card-header-galeria img{
+    border-radius: 11px 11px 0px 0px;
+    border-top: 0.5px solid #D1D3D9;
+    border-right: 0.5px solid #D1D3D9;
+    border-left: 0.5px solid #D1D3D9;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.card-body-galeria{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card-body-galeria h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body-galeria a{
+    color: black;
+} 
+
+.card-body-galeria p{
+    font-size: 15px;
+    color: black;
+}
+
+/* FIN PAGINA HISTORIA */
+
+/** AJUSTES RESPONSIVE MOBILE **/
+
+@media screen and (max-width:480px){
+   
+    /** PAGINA INDEX **/
+    
+    button, input, optgroup, select, textarea {
+        margin: 0px;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 35px;
+    }
+    
+    .container{
+        flex-direction:column;
+    }    
+
+    .banner-box{
+        width: 90%;
+        padding-left: 0;
+        padding-inline: 2rem;
+        padding-top: 2rem;
+    }
+
+    .banner-box h1{
+        font-size: 2rem;
+    }
+
+    .banner-box p{
+        
+        font-weight: 600;
+    }
+
+    .banner-box .boton{
+        margin: 0 15px 0 15px;
+        padding: 2rem;
+    } 
+
+    #subtitle{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+    }
+
+    .carousel{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .footer-nav{
+        text-align:left;
+    }
+    
+    /** PAGINA CATEGORIAS **/
+    
+    .índice-categorías .titulo-categorías{
+        margin: 0;
+        padding-left: 2rem;
+    }
+
+    /** PAGINA INICIAR SESION **/
+
+    .hero-inicio-sesion{
+        padding-top: 15%;
+        padding-bottom: 10%;
+        background-size: 315%;
+    }
+
+    #main-container {
+        width: 80%;
+    }
+    
+    /** PAGINA CREAR CUENTA **/
+    
+    .hero-crear-cuenta{
+        padding-top: 15%;
+        padding-bottom: 10%;
+        background-size: 400%;
+    }    
+    
+    .title-crear-cuenta{
+        padding: 50px 0 20px 0;
+    }
+}    
