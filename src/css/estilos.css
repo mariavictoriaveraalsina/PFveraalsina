@@ -20,8 +20,7 @@ ul{
     list-style:none;
 }
 
-/* PANTALLA INDEX */
-/* Inicio: Estilos del header */
+/* INICIO ESTILOS DEL HEADER */
 
 .header{
     background-color: #F9FAFA;
@@ -32,6 +31,10 @@ ul{
     left: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.navbar-toggler {
+    border: var(--bs-border-width) solid #9eb33e;
 }
 
 .nav{
@@ -73,7 +76,7 @@ ul{
 }
 
 .btn a{
-    border: 2px solid #556c74;
+    border: 2px solid #1B5016;
     border-radius: 10px;
     padding: 10px 15px;
     text-decoration: none;
@@ -106,9 +109,9 @@ ul{
     border: 2.5px solid #9eb33e;
 }
 
-/* Fin: Estilos del header */
+/* FIN ESTILOS DEL HEADER */
 
-/* Inicio: Estilos del main */
+/* INICIO PAGINA INDEX */
 
 .container{
     position: relative;
@@ -143,13 +146,14 @@ ul{
     font-weight: 700;
     margin-bottom: 45px;
     backdrop-filter: blur(2px);
+    padding-top: 20px;
 }
 
 .banner-box p{
     text-align: left;
     font-weight: 400;
     font-size: 18px;
-    color: #F6E8D3;
+    color: #F8F1D5;
     margin-bottom: 25px;
     backdrop-filter: blur(2px);
 }
@@ -157,7 +161,7 @@ ul{
 .boton {
     font-weight: bold;
     font-size: 20px;
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px 130px;
     background: none;
     border: none;
 }
@@ -173,41 +177,23 @@ ul{
 
 .boton a:hover{
     color:white;
-    background-color: #79845D;
+    background-color: #1B5016;
     transition: 0.5s;
-    border: 2px solid #79845D;
+    border: 2px solid #1B5016;
 }    
-
-
-@media screen and (max-width:480px){
-    .container{
-        flex-direction: column;
-    }    
-    .container img{
-        max-width: 100%;
-    }
-    .banner-box{
-        width: 100%;
-        text-align: center;
-        
-    }
-    .banner-box h1{
-        font-size: 2rem;
-    }
-}
 
 #subtitle {
     position: relative;
     text-align: center;
     font-weight: 500;
     font-size: 27px;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 80px;
 }
 
 .carousel{
-    padding: top 67px;
-    padding-bottom: 100px;
+    justify-content: center;
+    margin: 90px;
 }
 
 .carousel-lista img{
@@ -219,8 +205,6 @@ ul{
 .carousel-lista{
     display: flex;
     overflow-y:auto;
-    margin-right: 60px;
-    margin-left: 60px;
 }
 
 .card-categoria img{
@@ -228,14 +212,14 @@ ul{
     width: 370px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    border-bottom-color: 1px #79845D;
+    border-bottom-color: 1px #536A73;
 }
 
 .parraf-carousel {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    background-color: #79845D;
+    background-color: #536A73;
     width: 370px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -247,59 +231,54 @@ ul{
 }
 
 .mas-descargados{
-    background-image: url(../img/pagina_home/fondo-textura-papel-espacio-diseno.jpg);
     padding-top: 70px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     margin-bottom: 70px;
+    background-image: url(../img/pagina_home/fondo.jpg);
 }
 
 .secciones{
     font-size: 27px;
     font-weight: 600;
-    margin-left: 99px;
+    width: 100%;
     margin-bottom:59px ;
+    justify-content:center;
+    text-align: center;
 }
 
 .linea1{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
+    align-items: center;
     margin-bottom: 33px;
-}
-
-.linea2{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: 100px;
+    justify-content: center;
 }
 
 .card-libro{
     width: 160px;
-    height: 220px;
-    margin: 13px;
+    height: 230px;
+    margin: 12px;
     background-color: white;
-    border: 0.5px solid #d1d3d9;
+    border-bottom: 0.5px solid #d1d3d9;
+    border-left: 0.5px solid #d1d3d9;
+    border-bottom: 0.5px solid #d1d3d9;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .card-header img{
     border-radius: 11px 11px 0px 0px;
-    border-top: 0.5px solid #D1D3D9;
-    border-right: 0.5px solid #D1D3D9;
-    border-left: 0.5px solid #D1D3D9;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: url(<path-to-image>), cover no-repeat;
 }
 
 .card-body{
-    margin-left: 10px;
+    margin-left: 6px;
     margin-top: 10px;
 }
 
 .card-title{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -308,7 +287,7 @@ ul{
 } 
 
 .card-autor a{
-    font-size: 13px;
+    font-size: 14px;
     color: black;
 }
 
@@ -316,9 +295,9 @@ ul{
     margin-bottom: 80px;
 }
 
-/* Fin: Estilos del main */
+/* FIN PAGINA INDEX */
 
-/* Inicio: Estilos del footer */
+/* INICIO ESTILOS DEL FOOTER */
 
 .footer{
     background-color: #F6E8D3;
@@ -384,11 +363,9 @@ ul{
     color: white;
 }
 
-/* Fin: Estilos del footer */
+/* FIN ESTILOS DEL FOOTER */
 
-
-/* PANTALLA INICIAR SESIÓN */
-/* Inicio: Estilos del main */
+/* INICIO PAGINA INICIAR SESIÓN */
 
 #main-inicio-sesion {
     text-align: -webkit-center;
@@ -397,7 +374,7 @@ ul{
 .title-inicio-sesion{
     font-size: 25px;
     font-weight:bold;
-    padding: 30px 0 30px 0;
+    padding: 60px 0 30px 0;
 }
 
 #username{
@@ -410,7 +387,7 @@ ul{
     border-radius: 10px;
     border: 2px;
     border-style: solid;
-    border-color: #79845D;
+    border-color: #9eb33e;
 }
 
 #user-password{
@@ -423,7 +400,7 @@ ul{
     border-radius: 10px;
     border: 2px;
     border-style: solid;
-    border-color: #79845D;
+    border-color: #9eb33e;
 }
 
 #form-container {
@@ -433,74 +410,54 @@ ul{
 .link-crear-cuenta {
     text-align: right;
     padding-top: 20px;
-    padding-bottom: 87px;
-    font-weight: medium;
+    padding-bottom: 75px;
+    font-weight: 600;
     font-size: 17px;
 }
 
 .olvidaste-la-contraseña {
     text-align: left;
-    padding: 10px 0 20px 0;
-    font-weight: medium;
+    padding: 8px 0 25px 0;
+    font-weight: 600;
     font-size: 17px;
 }
 
-.back{
-    background-image:url(../img/back.jpg);
-    background-position: center;
-    display: flex;
-    max-width: 100%;
-}
-
 .hero-inicio-sesion {
-    position: relative;
-    text-align: center;
-    display: flex;
-    max-width: 100%;
-    height: 460px;
     background-image:url(../img/hero.jpg);
+    padding-top: 10%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 5%;
 }
 
-/* PANTALLA CREAR CUENTA */
-/* Inicio: Estilos del main */
+/* FIN PAGINA INICIAR SESIÓN */
+
+/* INICIO PAGINA CREAR CUENTA */
 
 #main-crear-cuenta {
     text-align: -webkit-center;
 }
 
-.back1{
-    background-image:url(../img/back1.jpg);
-    background-position: center;
-    display: flex;
-    max-width: 100%;
-}
-
 .hero-crear-cuenta {
-    position: relative;
-    text-align: center;
-    display: flex;
-    max-width: 100%;
-    height: 460px;
-    background-image:url(../img/hero.jpg);
-    background-position: center;
+    background-image:url(../img/hero2.jpg);
+    padding-top: 10%;
+    background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 5%;
 }
 
 #main-container {
     background-color: #F9FAFA;
-    width: 100%;
-    border-top-right-radius: 80px;
-    border-top-left-radius: 80px;
+    width: 30%;
+    border-radius: 20px;
 }
 
 .title-crear-cuenta{
     font-size: 25px;
     font-weight:bold;
-    padding: 30px 0 30px 0;
+    padding: 60px 0 20px 0;
 }
 
 .texto{
@@ -521,17 +478,17 @@ ul{
     width: 277px;
     text-align: left;
     margin-top: 10px; 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .form-input{
     width: 277px;
     height: 46px;
     border-radius: 10px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     background-color:white;
-    border-color: #79845D;
+    border-color: #9eb33e;
 }
 
 .boton-confirm{
@@ -539,7 +496,7 @@ ul{
     height: 46px;
     border-radius: 10px;
     border: 2px;
-    background-color: #49604d;
+    background-color: #1B5016;
     font-size: 20px;
     font-weight: 700;
 }
@@ -552,12 +509,12 @@ ul{
     width: 277px;
     height: 46px;
     border-radius: 10px;
-    border: 2px;
-    background-color: #f9f9f9;
+    border: none;
+    background-color: none;
     font-size: 20px;
     margin-bottom: 50px;
     font-weight: medium;
-    margin-bottom: 87px;
+    margin-bottom: 60px;
 }    
 
 .boton-cancelar a{
@@ -565,14 +522,15 @@ ul{
     text-align: center;
 }
 
-/* PANTALLA CATEGORIAS */
-/* Inicio: Estilos del main */
+/* FIN PAGINA CREAR CUENTA */
+
+/* INICIO PAGINA CATEGORIAS */
 
 .índice-categorías{
-    background-image: url(../img/pagina_home/fondo-textura-papel-espacio-diseno.jpg);
     width: 100%;
-    height: 62px;
+    height: 60px;
     margin-bottom: 5px;
+    background-color:#536A73 ;
 }
 
 .índice-categorías .titulo-categorías{
@@ -580,8 +538,8 @@ ul{
     font-weight: 500;
     line-height: normal;
     margin-left: 60px;
-    padding-top: 15px;
-    color: black;
+    padding: 15px;
+    color: white;
 }
 
 .contenedor-galería{
@@ -619,7 +577,7 @@ ul{
 
 .tipos h3 a{
     border-radius: 10px;
-    border: 2px solid #79845D;
+    border: 2px solid #1B5016;
     background: rgba(255, 255, 255, 0.80);
     color: black;
     padding: 5px 70px 5px 70px;
@@ -627,20 +585,21 @@ ul{
 
 .tipos h3 a:hover{
     color:white;
-    background-color: #79845D;
+    background-color: #1B5016;
     transition: 0.5s;
 }    
 
-/* PANTALLA HISTORIA */
-/* Inicio: Estilos del main */
+/* FIN PAGINA CATEGORIAS */
+
+/* INICIO PAGINA HISTORIA */
 
 .linea{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-top: 20px;
+    align-items: center;
     margin-bottom: 80px;
-    margin-top: 17px;
+    justify-content: center;
 }
 
 .card-libro-galeria{
@@ -681,3 +640,92 @@ ul{
     font-size: 15px;
     color: black;
 }
+
+/* FIN PAGINA HISTORIA */
+
+/** AJUSTES RESPONSIVE MOBILE **/
+
+@media screen and (max-width:480px){
+   
+    /** PAGINA INDEX **/
+    
+    button, input, optgroup, select, textarea {
+        margin: 0px;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 35px;
+    }
+    
+    .container{
+        flex-direction:column;
+    }    
+
+    .banner-box{
+        width: 90%;
+        padding-left: 0;
+        padding-inline: 2rem;
+        padding-top: 2rem;
+    }
+
+    .banner-box h1{
+        font-size: 2rem;
+    }
+
+    .banner-box p{
+        
+        font-weight: 600;
+    }
+
+    .banner-box .boton{
+        margin: 0 15px 0 15px;
+        padding: 2rem;
+    } 
+
+    #subtitle{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+    }
+
+    .carousel{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .footer-nav{
+        text-align:left;
+    }
+    
+    /** PAGINA CATEGORIAS **/
+    
+    .índice-categorías .titulo-categorías{
+        margin: 0;
+        padding-left: 2rem;
+    }
+
+    /** PAGINA INICIAR SESION **/
+
+    .hero-inicio-sesion{
+        padding-top: 15%;
+        padding-bottom: 10%;
+        background-size: 315%;
+    }
+
+    #main-container {
+        width: 80%;
+    }
+    
+    /** PAGINA CREAR CUENTA **/
+    
+    .hero-crear-cuenta{
+        padding-top: 15%;
+        padding-bottom: 10%;
+        background-size: 400%;
+    }    
+    
+    .title-crear-cuenta{
+        padding: 50px 0 20px 0;
+    }
+}    
