@@ -1,4 +1,2 @@
 # segundaPreEntrega
 
-
-la puta madre
