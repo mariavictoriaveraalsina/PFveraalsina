@@ -1,0 +1,46 @@
+
+.linea {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 80px;
+    justify-content: center;
+
+    .card-libro-galeria {
+        width:180px;
+        height: 250px;
+        margin: 15px;
+        background-color: $secondaryColor;
+        -webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+        animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        .card-header-galeria {
+
+            img {
+                border-radius: 11px 11px 0px 0px;
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            }
+        }
+        
+        .card-body-galeria {
+            margin-top: 10px;
+            text-align: left;
+            margin-left: 10px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+@keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}

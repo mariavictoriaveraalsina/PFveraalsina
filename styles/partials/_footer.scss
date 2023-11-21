@@ -1,0 +1,73 @@
+
+.footer {
+    background-color: $footerColor;
+    margin-top: 25px;
+
+    .footer-container {
+        width: 100%;
+        padding: 30px 30px 20px;
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-nav {
+            margin: 30px 0;
+            text-align: center;
+            
+            @include mobile {
+                text-align:left;
+            }
+            
+            ul {
+                display: flex;
+                justify-content: center;
+            
+                li {
+
+                    a {
+                        color: $mainColor;
+                        margin-bottom: 20px;
+                        margin-right: 30px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        opacity: 0.7;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+$redes: (
+    facebook: $mainColor,
+    instagram: $mainColor,
+    google-play: $mainColor,
+    app-store: $mainColor
+);
+
+@each $redsocial, $color in $redes {
+    .fa-#{$redsocial}{
+        color: $mainColor;
+        text-decoration: none;
+        padding: 6px 10px 6px 10px;
+        margin: 12px;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 2em;
+        
+        &:hover {
+            background-color:none ;
+            transition: 0.5s;
+            color:$secondaryColor;
+        }
+    }
+}
+

@@ -1,0 +1,106 @@
+.main-crear-cuenta {
+    text-align: -webkit-center;
+    
+    .crear-cuenta{
+        background-image:url(../img/hero2.jpg);
+        padding-top: 10%;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 5%;
+        
+        @include mobile {
+            padding-top: 15%;
+            padding-bottom: 10%;
+            background-size: 400%;
+        } 
+
+        .main-container {
+            background-color: $backColor;
+            width: 30%;
+            border-radius: 20px;     
+                    
+            .form-container{
+                width: 280px;
+
+                h1{  
+                    font-size: 25px;
+                    font-weight:bold;
+                    padding: 60px 0 20px 0;
+                    
+                    @include mobile {
+                        padding: 50px 0 20px 0;
+                    }
+                }
+                        
+                #form-crear-cuenta{
+
+                    p{
+                                    
+                        .form-label-N{
+                            width: 277px;
+                            text-align: left;
+                            font-size: 17px;
+                            font-weight: medium;
+                        }
+                                    
+                        .form-label{
+                            width: 277px;
+                            text-align: left;
+                            margin-top: 10px; 
+                            margin-bottom: 15px;
+
+                            .form-input{
+                                width: 277px;
+                                height: 46px;
+                                border-radius: 10px;
+                                border: 2px;
+                                border-style: solid;
+                                background-color:$secondaryColor;
+                                border-color: $navselectionColor;
+                            }
+                        }
+                    }               
+            
+                    .texto{
+                        text-align: left;
+                        margin-bottom: 35px;
+                        width: 280px;
+                        font-size: 12px;
+                    }
+
+                    .boton-confirm{
+                        width: 277px;
+                        height: 46px;
+                        border-radius: 10px;
+                        border: 2px;
+                        background-color: $btnColor;
+                        font-size: 20px;
+                        font-weight: 700;
+
+                        a{
+                            color: $secondaryColor;
+                        }
+                    }
+
+                    .boton-cancelar{
+                        width: 277px;
+                        height: 46px;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: none;
+                        font-size: 20px;
+                        margin-bottom: 50px;
+                        font-weight: medium;
+                        margin-bottom: 60px;
+                    }    
+                }
+            }
+        }
+    }
+}
+
+
+        
+
+

@@ -1,0 +1,59 @@
+.en-promocion {
+    margin-bottom: 80px;
+
+    .secciones {
+        font-size: 27px;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom:59px ;
+        justify-content:center;
+        text-align: center;
+    }
+
+    .linea1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 33px;
+        justify-content: center;
+    
+        .card-libro {
+            width: 160px;
+            height: 230px;
+            margin: 12px;
+            background-color: $secondaryColor;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            -webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+            animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+        
+            .card-header {
+
+                img{
+                    border-radius: 11px 11px 0px 0px;
+                    background: url(<path-to-image>), cover no-repeat;
+                }
+            }
+
+            .card-body {
+                margin-left: 6px;
+                margin-top: 10px;
+
+                .card-title {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                .card-autor {
+                    
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ @-webkit-keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+ @keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}

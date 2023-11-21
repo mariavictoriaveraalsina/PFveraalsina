@@ -1,0 +1,71 @@
+#subtitle {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: 27px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    -webkit-animation:kenburns-top 5s ease-out both;
+    animation:kenburns-top 5s ease-out both;
+
+    @include mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+    }
+}
+
+.carousel {
+    justify-content: center;
+    margin: 90px;
+
+    @include mobile {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .carousel-lista {
+        display: flex;
+        overflow-y:auto;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+            
+        .card-categoria {
+
+            img {
+                height: 330px;
+                width: 370px;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                padding-bottom: 2px $cardColor;
+            }
+
+            .cuerpo-card-categoria {
+
+                .parraf-carousel {
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    background-color: $cardColor;
+                    width: 370px;
+                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    padding: 5px;
+
+                    a{
+                        color: $secondaryColor;
+                    }                
+                }
+            }
+        }
+    }    
+}
+
+
+ @-webkit-keyframes kenburns-top{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}
+ @keyframes kenburns-top{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}

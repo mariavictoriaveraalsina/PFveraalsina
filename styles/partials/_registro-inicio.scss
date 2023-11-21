@@ -1,0 +1,83 @@
+.main-inicio-sesion {
+    text-align: -webkit-center;
+
+    .inicio-sesion {
+        background-image:url(../img/hero.jpg);
+        padding-top: 10%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 5%;
+
+        @include mobile {
+            padding-top: 15%;
+            padding-bottom: 10%;
+            background-size: 315%;
+        }
+    
+        .main-container { 
+
+            @include mobile {
+                width: 80%;
+            }
+
+            .form-container {
+                width: 280px;
+
+                h1 {
+                    font-size: 25px;
+                    font-weight:bold;
+                    padding: 60px 0 30px 0;
+                }
+
+                #iniciar_sesion.php {
+
+                    #username {
+                        text-align: left;
+                        color: $userColor;
+                        font-size: 17px;
+                        font-weight: medium;
+                        width: 277px;
+                        height: 46px;
+                        border-radius: 10px;
+                        border: 2px;
+                        border-style: solid;
+                        border-color: $navselectionColor;
+                    }
+
+                    #user-password {
+                        text-align: left;
+                        color: $userColor;
+                        font-size: 17px;
+                        font-weight: medium;
+                        width: 277px;
+                        height: 46px;
+                        border-radius: 10px;
+                        border: 2px;
+                        border-style: solid;
+                        border-color: $navselectionColor;
+                    }
+
+                    .olvidaste-la-contraseña {
+                        text-align: left;
+                        padding: 8px 0 25px 0;
+                        font-weight: 600;
+                        font-size: 17px;
+                    } 
+                    
+                    .link-crear-cuenta {
+                        text-align: right;
+                        padding-top: 20px;
+                        padding-bottom: 75px;
+                        font-weight: 600;
+                        font-size: 17px;                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+                    
+

@@ -1,0 +1,113 @@
+header {
+    background-color: $backColor;
+    height: 100px;
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    .navbar{
+        
+        .container-fluid{
+
+            .button {
+                
+                @include mobile {
+                    margin: 0px;
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    margin-right: 35px;
+                }
+
+                .navbar-toggler {
+                    border: var(--bs-border-width) solid $navselectionColor;
+                }
+            }
+
+            .nav {
+                display: flex;
+                justify-content: space-between;
+
+                .nav-menu {
+                    display: flex;
+                    margin-right: 15px;
+                    list-style: none;
+                }
+
+                ul{
+
+                    .navbar-nav {
+            
+                        .nav-menu-item {
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding: 40px 5px;
+                            text-transform:none;
+                            width:max-content;
+
+                            a {
+
+                                .nav-menu-link {
+
+                                    &:hover {
+                                        color: $navselectionColor;
+                                            
+                                        .nav-link {
+                                            display: flex;
+                                            padding: 0 25px;
+                                        }                                    
+                                    }
+                                }
+                            }
+                        }
+                                
+                        button{
+
+                            .btn {
+                                font-weight: bold;
+                                font-size: 20px;
+                                border: none;
+                                padding: 25px;
+                                background-color:transparent;
+
+                                a {
+                                    border: 2px solid $btnColor;
+                                    border-radius: 10px;
+                                    padding: 10px 15px;
+                                    background-color: $secondaryColor;
+
+                                    &:hover {
+                                        color: $secondaryColor;
+                                        background-color: $navselectionColor;
+                                        border: 2.5px solid $navselectionColor;
+                                    } 
+                                }
+                            } 
+
+                            .btn-seleccionado {
+                                font-weight: bold;
+                                font-size: 20px;
+                                border: none;
+                                padding: 25px;
+                                background-color: transparent;
+                            
+                                a {
+                                    border-radius: 10px;
+                                    padding: 10px 15px;
+                                    color: $secondaryColor;
+                                    background-color: $navselectionColor;
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    border: 2.5px solid $navselectionColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
