@@ -1,5 +1,5 @@
 header {
-    background-color: $backColor;
+    
     height: 100px;
     position:absolute;
     width: 100%;
@@ -8,9 +8,9 @@ header {
     display: flex;
     justify-content: space-between;
     
-    .navbar{
+    .navbar {
         
-        .container-fluid{
+        .container-fluid {
 
             .button {
                 
@@ -37,7 +37,7 @@ header {
                     list-style: none;
                 }
 
-                ul{
+                ul {
 
                     .navbar-nav {
             
@@ -64,7 +64,7 @@ header {
                             }
                         }
                                 
-                        button{
+                        button {
 
                             .btn {
                                 font-weight: bold;

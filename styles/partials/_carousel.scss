@@ -1,10 +1,11 @@
 #subtitle {
-    position: relative;
+    position: -webkit-center;
     text-align: center;
     font-weight: 500;
-    font-size: 27px;
+    font-size: 25px;
     margin-top: 90px;
     margin-bottom: 80px;
+    justify-content: center;
     -webkit-animation:kenburns-top 5s ease-out both;
     animation:kenburns-top 5s ease-out both;
 
