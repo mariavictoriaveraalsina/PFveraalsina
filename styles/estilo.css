@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -20,75 +21,13 @@ ul {
 }
 
 header {
-  background-color: #F9FAFA;
-  height: 100px;
-  position: absolute;
+  height: 150%;
   width: 100%;
-  top: 0;
-  left: 0;
   display: flex;
-  justify-content: space-between;
-}
-header .navbar .container-fluid .button .navbar-toggler {
-  border: var(--bs-border-width) solid #9eb33e;
-}
-header .navbar .container-fluid .nav {
-  display: flex;
-  justify-content: space-between;
-}
-header .navbar .container-fluid .nav .nav-menu {
-  display: flex;
-  margin-right: 15px;
-  list-style: none;
-}
-header .navbar .container-fluid .nav ul .navbar-nav .nav-menu-item {
+  background-color: #F9FAFA;
+  padding-right: 25px;
+  font-weight: 600;
   font-size: 20px;
-  font-weight: bold;
-  padding: 40px 5px;
-  text-transform: none;
-  width: -moz-max-content;
-  width: max-content;
-}
-header .navbar .container-fluid .nav ul .navbar-nav .nav-menu-item a .nav-menu-link:hover {
-  color: #9eb33e;
-}
-header .navbar .container-fluid .nav ul .navbar-nav .nav-menu-item a .nav-menu-link:hover .nav-link {
-  display: flex;
-  padding: 0 25px;
-}
-header .navbar .container-fluid .nav ul .navbar-nav button .btn {
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  padding: 25px;
-  background-color: transparent;
-}
-header .navbar .container-fluid .nav ul .navbar-nav button .btn a {
-  border: 2px solid #1B5016;
-  border-radius: 10px;
-  padding: 10px 15px;
-  background-color: white;
-}
-header .navbar .container-fluid .nav ul .navbar-nav button .btn a:hover {
-  color: white;
-  background-color: #9eb33e;
-  border: 2.5px solid #9eb33e;
-}
-header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado {
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  padding: 25px;
-  background-color: transparent;
-}
-header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
-  border-radius: 10px;
-  padding: 10px 15px;
-  color: white;
-  background-color: #9eb33e;
-  font-weight: bold;
-  font-size: 20px;
-  border: 2.5px solid #9eb33e;
 }
 
 .container {
@@ -156,12 +95,13 @@ header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
 }
 
 #subtitle {
-  position: relative;
+  position: -webkit-center;
   text-align: center;
   font-weight: 500;
-  font-size: 27px;
+  font-size: 25px;
   margin-top: 90px;
   margin-bottom: 80px;
+  justify-content: center;
   animation: kenburns-top 5s ease-out both;
 }
 
@@ -184,7 +124,7 @@ header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
   width: 370px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  border-bottom-color: 1px #536A73;
+  padding-bottom: 2px #536A73;
 }
 .carousel .carousel-lista .card-categoria .cuerpo-card-categoria .parraf-carousel {
   font-size: 20px;
@@ -417,40 +357,126 @@ header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
   transition: 0.5s;
 }
 
-#main-crear-cuenta {
+.main-inicio-sesion {
   text-align: -webkit-center;
 }
-#main-crear-cuenta .hero-crear-cuenta {
-  background-image: url(../img/hero2.jpg);
+.main-inicio-sesion .inicio-sesion {
+  background-image: url(/img/hero.jpg);
   padding-top: 10%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 5%;
 }
-#main-crear-cuenta #main-container {
+.main-inicio-sesion .inicio-sesion .main-container {
   background-color: #F9FAFA;
-  width: 30%;
+  width: 420px;
   border-radius: 20px;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-#main-crear-cuenta .form-container .title-crear-cuenta {
+.main-inicio-sesion .inicio-sesion .main-container .form-container {
+  width: 280px;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container h1 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 60px 0 30px 0;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion #username {
+  text-align: left;
+  color: #817B77;
+  font-size: 17px;
+  font-weight: medium;
+  width: 277px;
+  height: 46px;
+  border-radius: 10px;
+  border: 2px;
+  border-style: solid;
+  border-color: #9eb33e;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion #user-password {
+  text-align: left;
+  color: #817B77;
+  font-size: 17px;
+  font-weight: medium;
+  width: 277px;
+  height: 46px;
+  border-radius: 10px;
+  border: 2px;
+  border-style: solid;
+  border-color: #9eb33e;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion .olvidaste-la-contraseña {
+  text-align: left;
+  padding: 8px 0 25px 0;
+  font-weight: 500;
+  font-size: 17px;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion .boton-confirm {
+  width: 277px;
+  height: 46px;
+  border-radius: 10px;
+  border: 2px;
+  background-color: #1B5016;
+  font-size: 20px;
+  font-weight: 700;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion .boton-confirm a {
+  color: white;
+}
+.main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion .link-crear-cuenta {
+  text-align: right;
+  padding-top: 25px;
+  padding-bottom: 65px;
+  font-weight: 700;
+  font-size: 17px;
+}
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+.main-crear-cuenta {
+  text-align: -webkit-center;
+}
+.main-crear-cuenta .crear-cuenta {
+  background-image: url(/img/hero2.jpg);
+  padding-top: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+}
+.main-crear-cuenta .crear-cuenta .main-container {
+  background-color: #F9FAFA;
+  width: 420px;
+  border-radius: 20px;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.main-crear-cuenta .crear-cuenta .main-container .form-container {
+  width: 280px;
+}
+.main-crear-cuenta .crear-cuenta .main-container .form-container h1 {
   font-size: 25px;
   font-weight: bold;
   padding: 60px 0 20px 0;
 }
-#main-crear-cuenta .form-container p .form-label-N {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta p .form-label-N {
   width: 277px;
   text-align: left;
   font-size: 17px;
   font-weight: medium;
 }
-#main-crear-cuenta .form-container p .form-label {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta p .form-label {
   width: 277px;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 15px;
 }
-#main-crear-cuenta .form-container p .form-label .form-input {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta p .form-label .form-input {
   width: 277px;
   height: 46px;
   border-radius: 10px;
@@ -459,13 +485,13 @@ header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
   background-color: white;
   border-color: #9eb33e;
 }
-#main-crear-cuenta .form-container .texto {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .texto {
   text-align: left;
   margin-bottom: 35px;
   width: 280px;
   font-size: 12px;
 }
-#main-crear-cuenta .form-container .boton-confirm {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .boton-confirm {
   width: 277px;
   height: 46px;
   border-radius: 10px;
@@ -474,46 +500,28 @@ header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
   font-size: 20px;
   font-weight: 700;
 }
-#main-crear-cuenta .form-container .boton-confirm a {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .boton-confirm a {
   color: white;
 }
-#main-crear-cuenta .form-container .boton-cancelar {
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .boton-cancelar {
   width: 277px;
   height: 46px;
   border-radius: 10px;
   border: none;
   background-color: none;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-top: 5px;
   font-weight: medium;
   margin-bottom: 60px;
 }
-
-.boton-confirm {
-  width: 277px;
-  height: 46px;
-  border-radius: 10px;
-  border: 2px;
-  background-color: #1B5016;
-  font-size: 20px;
-  font-weight: 700;
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
 }
-.boton-confirm a {
-  color: white;
-}
-
-.boton-cancelar {
-  width: 277px;
-  height: 46px;
-  border-radius: 10px;
-  border: none;
-  background-color: none;
-  font-size: 20px;
-  margin-bottom: 50px;
-  font-weight: medium;
-  margin-bottom: 60px;
-}
-
 .footer {
   background-color: #F6E8D3;
   margin-top: 25px;
@@ -606,4 +614,6 @@ header .navbar .container-fluid .nav ul .navbar-nav button .btn-seleccionado a {
   background-color: none;
   transition: 0.5s;
   color: white;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+/** AJUSTES RESPONSIVE MOBILE **//*# sourceMappingURL=estilo.css.map */

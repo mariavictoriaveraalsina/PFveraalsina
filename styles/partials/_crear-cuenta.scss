@@ -1,56 +1,48 @@
 .main-crear-cuenta {
     text-align: -webkit-center;
     
-    .crear-cuenta{
+    .crear-cuenta {
         background-image:url(/img/hero2.jpg);
         padding-top: 10%;
         background-position: center; 
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 5%;
-        
-        @include mobile {
-            padding-top: 15%;
-            padding-bottom: 10%;
-            background-size: 400%;
-        } 
 
         .main-container {
             background-color: $backColor;
-            width: 30%;
+            width: 420px;
             border-radius: 20px;     
-                    
-            .form-container{
+            -webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+            animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+        
+            .form-container {
                 width: 280px;
 
-                h1{  
+                h1 {  
                     font-size: 25px;
                     font-weight:bold;
                     padding: 60px 0 20px 0;
-                    
-                    @include mobile {
-                        padding: 50px 0 20px 0;
-                    }
                 }
                         
-                #form-crear-cuenta{
+                #form-crear-cuenta {
 
-                    p{
+                    p {
                                     
-                        .form-label-N{
+                        .form-label-N {
                             width: 277px;
                             text-align: left;
                             font-size: 17px;
                             font-weight: medium;
                         }
                                     
-                        .form-label{
+                        .form-label {
                             width: 277px;
                             text-align: left;
                             margin-top: 10px; 
                             margin-bottom: 15px;
 
-                            .form-input{
+                            .form-input {
                                 width: 277px;
                                 height: 46px;
                                 border-radius: 10px;
@@ -62,14 +54,14 @@
                         }
                     }               
             
-                    .texto{
+                    .texto {
                         text-align: left;
                         margin-bottom: 35px;
                         width: 280px;
                         font-size: 12px;
                     }
 
-                    .boton-confirm{
+                    .boton-confirm {
                         width: 277px;
                         height: 46px;
                         border-radius: 10px;
@@ -78,19 +70,19 @@
                         font-size: 20px;
                         font-weight: 700;
 
-                        a{
+                        a {
                             color: $secondaryColor;
                         }
                     }
 
-                    .boton-cancelar{
+                    .boton-cancelar {
                         width: 277px;
                         height: 46px;
                         border-radius: 10px;
                         border: none;
                         background-color: none;
                         font-size: 20px;
-                        margin-bottom: 50px;
+                        margin-top: 5px;
                         font-weight: medium;
                         margin-bottom: 60px;
                     }    
@@ -100,6 +92,8 @@
     }
 }
 
+@-webkit-keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+@keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
 
         
 

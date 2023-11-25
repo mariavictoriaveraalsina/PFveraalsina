@@ -1,4 +1,3 @@
-
 .mas-descargados {
     padding-top: 70px;
     padding-bottom: 60px;
@@ -36,7 +35,7 @@
         
             .card-header {
 
-                img{
+                img {
                     border-radius: 11px 11px 0px 0px;
                     background: url(<path-to-image>), cover no-repeat;
                 }
@@ -50,7 +49,7 @@
                     font-size: 16px;
                     font-weight: bold;
                 
-                    a{
+                    a {
                         color: $mainColor;
                     } 
                 }

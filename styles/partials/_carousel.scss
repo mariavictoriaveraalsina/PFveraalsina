@@ -8,23 +8,11 @@
     justify-content: center;
     -webkit-animation:kenburns-top 5s ease-out both;
     animation:kenburns-top 5s ease-out both;
-
-    @include mobile {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin: 0;
-    }
 }
 
 .carousel {
     justify-content: center;
     margin: 90px;
-
-    @include mobile {
-        margin-right: 1rem;
-        margin-left: 1rem;
-        margin-top: 2rem;
-    }
 
     .carousel-lista {
         display: flex;
@@ -58,7 +46,7 @@
                     border-bottom-left-radius: 15px;
                     padding: 5px;
 
-                    a{
+                    a {
                         color: $secondaryColor;
                     }                
                 }

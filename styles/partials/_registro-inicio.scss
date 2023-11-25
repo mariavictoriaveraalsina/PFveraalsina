@@ -9,18 +9,13 @@
         background-size: cover;
         padding-bottom: 5%;
 
-        @include mobile {
-            padding-top: 15%;
-            padding-bottom: 10%;
-            background-size: 315%;
-        }
-    
         .main-container { 
-
-            @include mobile {
-                width: 80%;
-            }
-
+            background-color: $backColor;
+            width: 420px;
+            border-radius: 20px;  
+            -webkit-animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+            animation:shadow-drop-center .4s cubic-bezier(.25,.46,.45,.94) both;
+        
             .form-container {
                 width: 280px;
 
@@ -30,7 +25,7 @@
                     padding: 60px 0 30px 0;
                 }
 
-                #iniciar_sesion.php {
+                #iniciar_sesion {
 
                     #username {
                         text-align: left;
@@ -61,15 +56,29 @@
                     .olvidaste-la-contraseña {
                         text-align: left;
                         padding: 8px 0 25px 0;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 17px;
                     } 
                     
+                    .boton-confirm {
+                        width: 277px;
+                        height: 46px;
+                        border-radius: 10px;
+                        border: 2px;
+                        background-color: $btnColor;
+                        font-size: 20px;
+                        font-weight: 700;
+
+                        a {
+                            color: $secondaryColor;
+                        }
+                    }
+
                     .link-crear-cuenta {
                         text-align: right;
-                        padding-top: 20px;
-                        padding-bottom: 75px;
-                        font-weight: 600;
+                        padding-top: 25px;
+                        padding-bottom: 65px;
+                        font-weight: 700;
                         font-size: 17px;                        
                     }
                 }
@@ -78,6 +87,7 @@
     }
 }
 
-
+@-webkit-keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+@keyframes shadow-drop-center{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
                     
 
