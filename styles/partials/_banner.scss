@@ -9,7 +9,7 @@
     background-size: cover;
     margin: 0 auto;
     margin-bottom: 60px;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content:left;
     align-items: center;  
 
@@ -20,7 +20,7 @@
 
     .banner-box {
         width: 49%;
-        padding-left: 70px;
+        padding-left: 5%;
         
         h1 {
             text-align: left;

@@ -9,13 +9,18 @@
 
     h2{
         justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
     }
 }
 
 .carousel {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 90px;
 
     .carousel-lista {
         display: flex;
