@@ -226,6 +226,8 @@ header {
   margin-bottom: 59px;
   justify-content: center;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .en-promocion .linea1 {
   display: flex;
@@ -370,25 +372,32 @@ main .linea .card-libro-galeria .card-body-galeria p {
 }
 .main-inicio-sesion .inicio-sesion {
   background-image: url(../img/hero.jpg);
-  padding-top: 10%;
+  padding-top: 15%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 5%;
+  padding-bottom: 15%;
 }
 .main-inicio-sesion .inicio-sesion .main-container {
-  background-color: #F9FAFA;
-  width: 420px;
-  border-radius: 20px;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
 .main-inicio-sesion .inicio-sesion .main-container .form-container {
-  width: 280px;
+  background-color: #F9FAFA;
+  border-radius: 20px;
+  width: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .main-inicio-sesion .inicio-sesion .main-container .form-container h1 {
   font-size: 25px;
   font-weight: bold;
-  padding: 60px 0 30px 0;
+  padding: 50px 0 30px 0;
 }
 .main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion #username {
   text-align: left;
@@ -419,6 +428,7 @@ main .linea .card-libro-galeria .card-body-galeria p {
   padding: 8px 0 25px 0;
   font-weight: 500;
   font-size: 17px;
+  width: 277px;
 }
 .main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion .boton-confirm {
   width: 277px;
@@ -435,9 +445,10 @@ main .linea .card-libro-galeria .card-body-galeria p {
 .main-inicio-sesion .inicio-sesion .main-container .form-container #iniciar_sesion .link-crear-cuenta {
   text-align: right;
   padding-top: 25px;
-  padding-bottom: 65px;
-  font-weight: 700;
+  padding-bottom: 40px;
+  font-weight: 500;
   font-size: 17px;
+  width: 277px;
 }
 @keyframes shadow-drop-center {
   0% {
@@ -452,26 +463,32 @@ main .linea .card-libro-galeria .card-body-galeria p {
 }
 .main-crear-cuenta .crear-cuenta {
   background-image: url(../img/hero2.jpg);
-  padding-top: 10%;
+  padding-top: 5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 5%;
 }
 .main-crear-cuenta .crear-cuenta .main-container {
-  background-color: #F9FAFA;
-  width: 420px;
-  border-radius: 20px;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
 .main-crear-cuenta .crear-cuenta .main-container .form-container {
-  width: 280px;
+  background-color: #F9FAFA;
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .main-crear-cuenta .crear-cuenta .main-container .form-container h1 {
   font-size: 25px;
   font-weight: bold;
-  padding: 60px 0 15px 0;
-  width: 280px;
+  padding: 50px 0 15px 0;
 }
 .main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta label {
   text-align: left;
@@ -483,11 +500,12 @@ main .linea .card-libro-galeria .card-body-galeria p {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 15px;
+  width: 277px;
 }
 .main-crear-cuenta .crear-cuenta .main-container .form-container .texto {
   text-align: left;
   margin-bottom: 35px;
-  width: 280px;
+  width: 277px;
   font-size: 12px;
 }
 .main-crear-cuenta .crear-cuenta .main-container .form-container .boton-confirm {
@@ -523,7 +541,7 @@ main .linea .card-libro-galeria .card-body-galeria p {
 }
 .footer {
   background-color: #F6E8D3;
-  margin-top: 25px;
+  margin-top: 5%;
 }
 .footer .footer-container {
   width: 100%;
