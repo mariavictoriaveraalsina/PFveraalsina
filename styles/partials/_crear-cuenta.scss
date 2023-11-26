@@ -22,71 +22,58 @@
                 h1 {  
                     font-size: 25px;
                     font-weight:bold;
-                    padding: 60px 0 20px 0;
+                    padding: 60px 0 15px 0;
+                    width: 280px;
                 }
                         
                 #form-crear-cuenta {
-
-                    p {
-                                    
-                        .form-label-N {
-                            width: 277px;
-                            text-align: left;
-                            font-size: 17px;
-                            font-weight: medium;
-                        }
-                                    
-                        .form-label {
-                            width: 277px;
-                            text-align: left;
-                            margin-top: 10px; 
-                            margin-bottom: 15px;
-
-                            .form-input {
-                                width: 277px;
-                                height: 46px;
-                                border-radius: 10px;
-                                border: 2px;
-                                border-style: solid;
-                                background-color:$secondaryColor;
-                                border-color: $navselectionColor;
-                            }
-                        }
-                    }               
-            
-                    .texto {
+                    
+                    label {
                         text-align: left;
-                        margin-bottom: 35px;
-                        width: 280px;
-                        font-size: 12px;
-                    }
-
-                    .boton-confirm {
-                        width: 277px;
-                        height: 46px;
-                        border-radius: 10px;
-                        border: 2px;
-                        background-color: $btnColor;
-                        font-size: 20px;
-                        font-weight: 700;
-
-                        a {
-                            color: $secondaryColor;
-                        }
-                    }
-
-                    .boton-cancelar {
-                        width: 277px;
-                        height: 46px;
-                        border-radius: 10px;
-                        border: none;
-                        background-color: none;
-                        font-size: 20px;
-                        margin-top: 5px;
+                        font-size: 17px;
                         font-weight: medium;
-                        margin-bottom: 60px;
-                    }    
+                        width: 277px;
+                    }
+                    
+                    input {
+                        text-align: left;
+                        margin-top: 10px; 
+                        margin-bottom: 15px;
+                    }
+                }               
+            
+                .texto {
+                    text-align: left;
+                    margin-bottom: 35px;
+                    width: 280px;
+                    font-size: 12px;
                 }
+
+                .boton-confirm {
+                    width: 277px;
+                    height: 46px;
+                    border-radius: 10px;
+                    border: 2px;
+                    background-color: $btnColor;
+                    font-size: 20px;
+                    font-weight: 700;
+
+                    a {
+                        color: $secondaryColor;
+                    }
+                }
+
+                .boton-cancelar {
+                    width: 277px;
+                    height: 46px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: none;
+                    font-size: 20px;
+                    margin-top: 5px;
+                    font-weight: medium;
+                    margin-bottom: 60px;
+                }    
             }
         }
     }

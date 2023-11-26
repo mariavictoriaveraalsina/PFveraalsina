@@ -94,15 +94,17 @@ header {
   border: 2px solid #1B5016;
 }
 
-#subtitle {
-  position: -webkit-center;
+.subtitle {
   text-align: center;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 90px;
   margin-bottom: 80px;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.subtitle h2 {
   justify-content: center;
-  animation: kenburns-top 5s ease-out both;
+  width: 100%;
 }
 
 .carousel {
@@ -139,14 +141,14 @@ header {
 .carousel .carousel-lista .card-categoria .cuerpo-card-categoria .parraf-carousel a {
   color: white;
 }
-@keyframes kenburns-top {
+@keyframes text-focus-in {
   0% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 16%;
+    filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    transform: scale(1.25) translateY(-15px);
-    transform-origin: top;
+    filter: blur(0);
+    opacity: 1;
   }
 }
 .mas-descargados {
@@ -462,36 +464,27 @@ header {
 .main-crear-cuenta .crear-cuenta .main-container .form-container h1 {
   font-size: 25px;
   font-weight: bold;
-  padding: 60px 0 20px 0;
+  padding: 60px 0 15px 0;
+  width: 280px;
 }
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta p .form-label-N {
-  width: 277px;
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta label {
   text-align: left;
   font-size: 17px;
   font-weight: medium;
-}
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta p .form-label {
   width: 277px;
+}
+.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta input {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta p .form-label .form-input {
-  width: 277px;
-  height: 46px;
-  border-radius: 10px;
-  border: 2px;
-  border-style: solid;
-  background-color: white;
-  border-color: #9eb33e;
-}
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .texto {
+.main-crear-cuenta .crear-cuenta .main-container .form-container .texto {
   text-align: left;
   margin-bottom: 35px;
   width: 280px;
   font-size: 12px;
 }
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .boton-confirm {
+.main-crear-cuenta .crear-cuenta .main-container .form-container .boton-confirm {
   width: 277px;
   height: 46px;
   border-radius: 10px;
@@ -500,10 +493,10 @@ header {
   font-size: 20px;
   font-weight: 700;
 }
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .boton-confirm a {
+.main-crear-cuenta .crear-cuenta .main-container .form-container .boton-confirm a {
   color: white;
 }
-.main-crear-cuenta .crear-cuenta .main-container .form-container #form-crear-cuenta .boton-cancelar {
+.main-crear-cuenta .crear-cuenta .main-container .form-container .boton-cancelar {
   width: 277px;
   height: 46px;
   border-radius: 10px;
