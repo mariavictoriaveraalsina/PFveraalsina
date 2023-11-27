@@ -68,23 +68,29 @@
 }
 
 @media screen and (max-width:480px){
-    .banner-box {
-        width: 100%;
-        padding-left: 0;
-        padding-inline: 2rem;
-        padding-top: 2rem;
-    }
+    .container {
+        height: 580px;
 
-    .banner-box h1{
-        font-size: calc(1.325rem + .9vw);
-    }
+        .banner-box {
+            width: 100%;
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 29px;
+                padding-top: 30px;
+                backdrop-filter: none;
+            }
     
-    .banner-box p{
-        font-size: 10px;
-    }
+            p {
+                font-size: 18px;
+                margin-bottom: 25px;
+                backdrop-filter: none;
+                font-weight: 600;
+            }
     
-    .banner-box .boton{
-        margin: 0 15px 0 15px;
-        padding: 2rem;
-    }  
+            .boton {
+                margin: 20px 0px 45px 10px;
+            }  
+        }
+    }
 }

@@ -95,21 +95,28 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-  .banner-box {
+  .container {
+    height: 580px;
+  }
+  .container .banner-box {
     width: 100%;
-    padding-left: 0;
-    padding-inline: 2rem;
-    padding-top: 2rem;
   }
-  .banner-box h1 {
-    font-size: calc(1.325rem + 0.9vw);
+  .container .banner-box h1 {
+    font-size: 30px;
+    margin-bottom: 29px;
+    padding-top: 30px;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
-  .banner-box p {
-    font-size: 10px;
+  .container .banner-box p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    font-weight: 600;
   }
-  .banner-box .boton {
-    margin: 0 15px 0 15px;
-    padding: 2rem;
+  .container .banner-box .boton {
+    margin: 20px 0px 45px 10px;
   }
 }
 .subtitle {
@@ -653,6 +660,4 @@ main .linea .card-libro-galeria .card-body-galeria p {
   background-color: none;
   transition: 0.5s;
   color: white;
-}
-
-/** AJUSTES RESPONSIVE MOBILE **//*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */
