@@ -171,6 +171,22 @@ header {
 .carousel .carousel-lista .card-categoria .cuerpo-card-categoria .parraf-carousel a {
   color: white;
 }
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  .carousel .carousel-lista img {
+    margin-right: 15px;
+  }
+  .carousel .carousel-lista .card-categoria img {
+    width: 280px;
+  }
+  .carousel .carousel-lista .card-categoria .cuerpo-card-categoria .parraf-carousel {
+    width: 280px;
+  }
+}
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);

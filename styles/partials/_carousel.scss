@@ -63,5 +63,33 @@
     }    
 }
 
+@media screen and (max-width:480px){
+    .carousel {
+        margin-left: 15px;
+        margin-right: 0px;
+
+        .carousel-lista {
+            
+            img {
+                margin-right: 15px; 
+            }
+    
+            .card-categoria {
+
+                img {
+                    width: 280px; 
+                }
+
+                .cuerpo-card-categoria {
+                    
+                    .parraf-carousel {
+                        width: 280px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
 @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 @keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
